@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Javascript Site</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+
+    
+    <link rel="shortcut icon" href="faviconjs.ico" type="image/x-icon">
+    <link rel="icon" href="faviconjs.ico" type="image/x-icon">
+    <!--aca va flexboxgrid-->
+    <link rel="stylesheet" href="css/flexboxgrid.css">
+</head>
+<body>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <h1 class="amarillo">
+        Javascript    .JS
+    </h1>
+    <p>¿Qué es Javascript? 
+        Javascript es un lenguaje de programación, o lo que es lo mismo, un mecanismo con el que podemos decirle a nuestro navegador que tareas debe realizar, en que orden y cuantas veces (por ejemplo).
+        
+        Muchas de las tareas que realizamos con HTML y CSS se podrían realizar con Javascript. De hecho, es muy probable que al principio nos parezca que es mucho más complicado hacerlo con Javascript, y que por lo tanto no merece la pena. Sin embargo, con el tiempo veremos que Javascript nos ofrece una mayor flexibilidad y un abanico de posibilidades más grande, y que bien usadas, pueden ahorrarnos bastante tiempo.
+        
+        Para comprenderlo, un ejemplo muy sencillo sería el siguiente:</p>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+             <h1 class="morado">Ejercicio N 1 Javascript</h1>
+             <p class="parrafo1"> <script>
+                document.writeln("Hola Mundo!");
+                </script></p>
+             <script>
+                document.writeln("Hola Mundo!");
+                </script>
+        
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h1 class="morado">Ejercicio N 2 Javascript</h1>
+            <p class="parrafo1"><script type="text/javascript">
+                const a = "Hola";
+                let b = " mundo!";
+                document.write("Constante a contiene " + a );
+                document.write("</br>");
+                document.write("Variable b contiene " + b );
+                document.write("</br>");
+                document.write(a + b );
+                </script></p>
+            <script type="text/javascript">
+                const a = "Hola";
+                let b = " mundo!";
+                document.write("Constante a contiene " + a );
+                document.write("</br>");
+                document.write("Variable b contiene " + b );
+                document.write("</br>");
+                document.write(a + b );
+                </script>
+       </div>
+    </div>
+
+
+
+       <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 ">
+             <h1 class="morado">Ejercicio N 3 Javascript</h1>
+             <p class="parrafo1 ">
+                Este ejercicio con javascript nos enseña que mediante una alerta una podemos programar una ventana emergente que al cargar debemos introducir tu nombre y este te va a saludar e iniciar la carga de dicha pagina web.
+                
+                <script>
+                let dato, resultado;
+                dato = window.prompt("Introduce tu nombre", "0");
+                resultado = `Hola, como estas ${dato} ` ;
+                document.write(resultado);
+                </script> </p>
+             <script>
+                let dato, resultado;
+                dato = window.prompt("Introduce tu nombre", "0");
+                resultado = `Hola, como estas ${dato} ` ;
+                document.write(resultado);
+                </script>
+        </div>
+       
+        
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h1 class="morado">Ejercicio N 4 Javascript</h1>
+            <p class="parrafo1">
+                Este ejercicio  con Javascript muestra nombrando un numero del mes muestra cuantos dias trae ese mes,demuestra mediante una funcion el numero correcto de dias de cada mes
+                <script>
+                let dia,mes,año;
+                mes=prompt('Introduzca el número del mes:','');
+                mes=parseInt(mes);
+                if (mes==1 || mes==3 || mes==5 || mes==7 || mes==8 || mes ==10 || mes==12)
+                {
+                document.write('Este mes tiene 31 dias.');
+                }
+                else
+                {
+                if (mes==2)
+                document.write('Este mes puede tener 30 dias.');
+                else
+                document.write('Este mes tiene 30 dias.');
+                }
+                </script></p>
+            <script>
+                let dia,mes,año;
+                mes=prompt('Introduzca el número del mes:','');
+                mes=parseInt(mes);
+                if (mes==1 || mes==3 || mes==5 || mes==7 || mes==8 || mes ==10 || mes==12)
+                {
+                document.write('Este mes tiene 31 dias.');
+                }
+                else
+                {
+                if (mes==2)
+                document.write('Este mes puede tener 30 dias.');
+                else
+                document.write('Este mes tiene 30 dias.');
+                }
+                </script>
+            
+       </div>
+       </div>
+
+
+       <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h1 class="morado">Ejercicio N 5 Javascript</h1>
+        <p class="parrafo1"><form name="calculadora">
+            Primer número: <input type="text" name="valor1"><br>
+            Segundo número: <input type="text" name="valor2"><br>
+            <input type="button" name="button1" value="sumar" onclick="sumar()">
+            <input type="button" name="button2" value="restar" onclick="restar()">
+            <input type="button" name="button3" value="multiplicar" onclick="multiplicar()">
+            <input type="button" name="button4" value="dividir" onclick="dividir()"><br>
+            Resultado: <input type="text" name="resultado"> </p>
+        <script>
+            let dato1, dato2, num1, num2;
+            dato1 = window.prompt("Introduce primer número ?", "0");
+            num1 = parseInt(dato1);
+            dato2 = window.prompt("Introduce segundo número ?", "0");
+            num2 = parseInt(dato2);
+            let resultado = num1 + num2;
+            document.write(`<br/> <br/> La suma es ${resultado} ` );
+            </script>
+   </div>
+
+
+
+
+
+
+
+
+
+    
+    
+</body>
+</html>

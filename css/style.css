@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: url(../img/fondo2.webp) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+.amarillo{
+    color: yellow;
+    border: 5px black solid;
+}
+h1 {
+    text-align: center;
+    font-size: 70px;
+}
+p {
+    color: rgb(19, 19, 20);
+    text-align: center;
+    justify-content: center;
+    text-align: justify;
+    
+}
+
+.morado {
+    color: rgb(42, 166, 207);
+    font-size: 50px;
+   
+}
+.rojo {
+    color: black;
+    font-size: 50px;
+}
+.parrafo1 {
+    color: rgb(11, 12, 12);
+}
+.parrafo2 {
+    color: white;
+}
